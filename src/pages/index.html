@@ -4,9 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Home</title>
   </head>
   <body>
-    <h1>HOme</h1>
+    <div class="container container-sm p-5">
+      <section id="home-header">
+        <div class="home-picture"></div>
+        <h1 class="primary-color">ResepApp</h1>
+        <p>Cari Resep masak untuk memasak maupun belajar memasak</p>
+        <label class="search-recipe" for="recipe-search">
+          <input type="search" placeholder="Cari Resep" id="recipe-search" />
+        </label>
+        <p>atau lihat <a href="" class="recom-recipe">resep pilihan</a></p>
+      </section>
+
+      <section id="recomendation-recipe">
+        <h1 class="title-section">Resep Pilihan</h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="picture-recipe"></div>
+            <div class="text-recipe">
+              <h1>Nama Resep</h1>
+              <p>Deskripsi</p>
+              <a href="">Buka resep</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

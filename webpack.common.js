@@ -4,7 +4,7 @@ const htmlWebpack = require('html-webpack-plugin');
 const generateHtmlPlugin = (title) => {
   return new htmlWebpack({
     title,
-    filename: `${title}.html`,
+    filename: `${title.toLowerCase()}.html`,
     template: `./src/pages/${title.toLowerCase()}.html`,
   });
 };
@@ -31,15 +31,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-          },
-        ],
+        test: /\.(scss|css)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },

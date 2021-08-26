@@ -1,1 +1,2 @@
-console.log('tes');
+import '../styles/style.scss';
+console.log('halo');
