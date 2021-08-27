@@ -1,5 +1,6 @@
 const path = require('path');
 const htmlWebpack = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const generateHtmlPlugin = (title) => {
   return new htmlWebpack({
@@ -24,9 +25,15 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
 
-  plugins: pages,
+  plugins: [
+    ...pages,
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'src/assets', to: 'assets' }],
+    }),
+  ],
 
   module: {
     rules: [
