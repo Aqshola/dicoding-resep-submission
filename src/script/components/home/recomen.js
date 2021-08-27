@@ -11,14 +11,7 @@ class recom extends HTMLElement {
         <section id="recomendation-recipe">
   <h1 class="title-section">Resep Pilihan</h1>
   <div class="card-container">
-    <div class="card">
-      <div class="picture-recipe"></div>
-      <div class="text-recipe">
-        <h1>Nama Resep</h1>
-        <p>Deskripsi</p>
-        <a href="">Buka resep</a>
-      </div>
-    </div>
+    <recipe-card></recipe-card>
   </div>
 </section>`;
   }
