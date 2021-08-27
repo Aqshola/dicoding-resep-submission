@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import './home.scss';
 @import './search.scss';
+@import './utils.scss';
 
 * {
   font-family: 'Poppins', sans-serif !important;
@@ -25,37 +26,4 @@ div {
 
 .primary-color {
   color: #ffb830 !important;
-}
-
-.card {
-  border: 2px solid #ffb830;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 300px;
-  margin: auto;
-
-  .picture-recipe {
-    width: 300px;
-    height: 200px;
-    display: block;
-    background-color: gray;
-  }
-  .text-recipe {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    h1 {
-      text-align: left !important;
-      font-size: 20px;
-    }
-    a {
-      margin-top: 10px;
-      padding: 5px 20px;
-      width: 100px;
-      text-align: center;
-      border-radius: 5px;
-      background-color: #ffb830;
-      color: black;
-    }
-  }
 }
