@@ -24,7 +24,7 @@ class recom extends HTMLElement {
   }
 
   async getRecomen() {
-    axios('https://api.jikan.moe/v3/schedule', {
+    axios('https://masak-apa.tomorisakura.vercel.app/resep/api/recipes', {
       headers: { 'Access-Control-Allow-Origin': '*' },
       method: 'GET',
       crossdomain: true,
