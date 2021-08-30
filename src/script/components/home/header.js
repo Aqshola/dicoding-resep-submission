@@ -1,17 +1,24 @@
 class headerHome extends HTMLElement {
   constructor() {
-    super();
+    super()
   }
   connectedCallback() {
-    this.render();
+    this.render()
   }
 
   render() {
     this.innerHTML = `
         <section id="home-header">
+        <div class="header-content-picture">
         <div class="home-picture">
           <img src="/assets/mobile-header-picture.png" alt="" srcset="" />
         </div>
+        <div class="home-picture-desktop">
+          <img src="/assets/desktop-header-picture.png" alt="" srcset="" />
+        </div>
+        </div>
+        
+        <div class="header-content-text">
         <h1 class="primary-color">ResepApp</h1>
         <p>Cari Resep masak untuk memasak maupun belajar memasak</p>
         <label class="search-recipe" for="recipe-search">
@@ -34,9 +41,11 @@ class headerHome extends HTMLElement {
           atau lihat
           <a href="#recomendation-recipe" class="recom-recipe">resep pilihan</a>
         </p>
+        </div>
+        
       </section>
-        `;
+        `
   }
 }
 
-export default customElements.define('header-home', headerHome);
+export default customElements.define('header-home', headerHome)

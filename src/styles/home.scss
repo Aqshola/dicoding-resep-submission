@@ -5,8 +5,14 @@
   gap: 10px;
   position: relative;
 
-  p {
-    width: 250px;
+  .header-content-text {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    p {
+      width: 250px;
+    }
   }
 
   .search-recipe {
@@ -36,6 +42,9 @@
     height: 205;
     right: -30px;
   }
+  .home-picture-desktop {
+    display: none;
+  }
 }
 
 #recomendation-recipe {
@@ -49,4 +58,55 @@
 .title-section {
   text-align: center;
   font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  #home-header {
+    margin-top: 50px !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-size: 48px;
+    }
+
+    p {
+      width: 300px !important;
+    }
+    .home-picture {
+      display: none;
+    }
+
+    .search-recipe {
+      width: 300px;
+      padding: 10px;
+    }
+
+    .header-content-picture {
+      order: 2;
+
+      .home-picture-desktop {
+        display: block;
+        img {
+          width: 400px;
+        }
+      }
+    }
+  }
+  #recomendation-recipe {
+    margin-top: 30px;
+
+    .title-section {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .card-container {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 20px;
+    }
+  }
 }

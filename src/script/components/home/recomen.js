@@ -1,9 +1,9 @@
 class recom extends HTMLElement {
   constructor() {
-    super();
+    super()
   }
   connectedCallback() {
-    this.render();
+    this.render()
   }
 
   render() {
@@ -12,8 +12,11 @@ class recom extends HTMLElement {
   <h1 class="title-section">Resep Pilihan</h1>
   <div class="card-container">
     <recipe-card></recipe-card>
+    <recipe-card></recipe-card>
+    <recipe-card></recipe-card>
+    <recipe-card></recipe-card>
   </div>
-</section>`;
+</section>`
   }
 }
-export default customElements.define('recom-recipe', recom);
+export default customElements.define('recom-recipe', recom)
