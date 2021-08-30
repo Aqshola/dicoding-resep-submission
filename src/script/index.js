@@ -1,6 +1,6 @@
-import '../styles/style.scss';
-import './components/home/header';
-import './components/home/recomen';
-import './components/utils/card';
-import './components/utils/nav';
-console.log('halo');
+import '../styles/style.scss'
+import './components/home/header'
+import './components/home/recomen'
+import './components/common/card'
+import './components/common/nav'
+console.log('halo')

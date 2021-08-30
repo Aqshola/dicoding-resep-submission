@@ -15,6 +15,7 @@ module.exports = merge(common, {
         target: 'https://masak-apa-tomorisakura.vercel.app',
         secure: false,
         changeOrigin: true,
+        pathRewrite: { '^/resep': '' },
       },
     },
   },

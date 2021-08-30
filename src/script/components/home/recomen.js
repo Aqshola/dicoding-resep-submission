@@ -1,5 +1,4 @@
 import axios from 'axios'
-import { fetcher, createCORSRequest } from '../../../utils/fetcher'
 
 class recom extends HTMLElement {
   constructor() {
@@ -24,15 +23,11 @@ class recom extends HTMLElement {
   }
 
   async getRecomen() {
-    axios('https://masak-apa.tomorisakura.vercel.app/resep/api/recipes', {
+    axios(' resep/api/recipes', {
       headers: { 'Access-Control-Allow-Origin': '*' },
       method: 'GET',
       crossdomain: true,
     }).then((data) => console.log(data))
-    console.log('tes')
-    // fetch('https://masak-apa.tomorisakura.vercel.app/resep/api/recipes').then(
-    //   (data) => console.log(data)
-    // )
   }
 }
 export default customElements.define('recom-recipe', recom)
