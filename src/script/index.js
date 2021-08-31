@@ -1,3 +1,4 @@
+import 'regenerator-runtime'
 import '../styles/style.scss'
 import './components/home/header'
 import './components/home/recomen'

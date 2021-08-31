@@ -15,7 +15,7 @@ class card extends HTMLElement {
     this.innerHTML = `
     <div class="card">
       <div class="picture-recipe">
-        <img src=${this.img} alt=${this.title}/>
+        <img src=${this.img} alt=${this.title} loading="lazy"/>
       </div>
       <div class="text-recipe">
         <h1>${this.title.split(',')[0]}</h1>

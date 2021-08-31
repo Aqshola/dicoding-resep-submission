@@ -22,15 +22,19 @@ class recom extends HTMLElement {
   }
 
   async getRecomen() {
-    const container = document.querySelector(
-      '#recomendation-recipe .card-container'
-    )
     const result = await axios(' resep/api/recipes', {
       headers: { 'Access-Control-Allow-Origin': '*' },
       method: 'GET',
       crossdomain: true,
     })
 
+    this.updateRecomen(result)
+  }
+
+  updateRecomen(result) {
+    const container = document.querySelector(
+      '#recomendation-recipe .card-container'
+    )
     let append = ' '
     const listResep = result.data.results
     listResep.map(

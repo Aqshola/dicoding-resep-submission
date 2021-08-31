@@ -18,7 +18,7 @@ class detail extends HTMLElement {
   render() {
     this.innerHTML = `<section id="header-detail">
         <div class="food-img">
-            <img src="" alt=""/>
+            <img src="" alt="" loading="lazy"/>
         </div>
         <h1 class="recipe-title">
         </h1>
