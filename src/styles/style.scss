@@ -19,6 +19,17 @@ div {
   text-decoration: none;
 }
 
+button {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+button:focus {
+  outline: 1px solid black;
+}
+
 @media (min-width: 992px) {
   .container {
     padding: 20px 70px !important;
