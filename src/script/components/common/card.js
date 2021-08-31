@@ -1,22 +1,28 @@
 class card extends HTMLElement {
   constructor() {
-    super();
+    super()
   }
   connectedCallback() {
-    this.render();
+    this.img = this.getAttribute('img') || null
+    this.title = this.getAttribute('title') || null
+    this.desc = this.getAttribute('desc') || null
+    this.key = this.getAttribute('key') || null
+    this.render()
   }
 
   render() {
+    const link = 'detail?makanan=' + this.key
     this.innerHTML = `
     <div class="card">
-      <div class="picture-recipe"></div>
-      <div class="text-recipe">
-        <h1>Nama Resep</h1>
-        <p>Deskripsi</p>
-        <a href="">Buka resep</a>
+      <div class="picture-recipe">
+        <img src=${this.img} alt=${this.title}/>
       </div>
-    </div>`;
+      <div class="text-recipe">
+        <h1>${this.title.split(',')[0]}</h1>
+        <a href=${link}>Buka resep</a>
+      </div>
+    </div>`
   }
 }
 
-export default customElements.define('recipe-card', card);
+export default customElements.define('recipe-card', card)
