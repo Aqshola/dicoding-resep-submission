@@ -18,7 +18,7 @@ const populateHtmlPlugins = (pagesArray) => {
   return res
 }
 
-const pages = populateHtmlPlugins(['Index', 'Search', 'Recipe'])
+const pages = populateHtmlPlugins(['Index', 'Search', 'Recipe', 'Detail'])
 
 module.exports = {
   entry: './src/script/index.js',

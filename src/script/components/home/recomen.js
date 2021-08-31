@@ -16,7 +16,7 @@ class recom extends HTMLElement {
         <section id="recomendation-recipe">
   <h1 class="title-section">Resep Pilihan</h1>
   <div class="card-container">
-    
+    memuat resep...
   </div>
 </section>`
   }
@@ -37,7 +37,6 @@ class recom extends HTMLElement {
       (data) =>
         (append += `<recipe-card title='${data.title}' img=${data.thumb} key=${data.key}></recipe-card>`)
     )
-    console.log(listResep)
 
     container.innerHTML = append
   }

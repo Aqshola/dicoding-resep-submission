@@ -11,7 +11,7 @@ class card extends HTMLElement {
   }
 
   render() {
-    const link = 'detail?makanan=' + this.key
+    const link = 'detail.html?makanan=' + this.key
     this.innerHTML = `
     <div class="card">
       <div class="picture-recipe">
