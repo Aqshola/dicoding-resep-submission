@@ -7,3 +7,6 @@ import './components/search/header'
 import './components/detail/content'
 import './components/common/card'
 import './components/common/nav'
+
+console.log(process.env.API_LINK)
+console.log(process.env)
