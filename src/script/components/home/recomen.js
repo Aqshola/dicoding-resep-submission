@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { API_LINK } from '../../constant'
 
 class recom extends HTMLElement {
   constructor() {
@@ -22,7 +23,7 @@ class recom extends HTMLElement {
   }
 
   async getRecomen() {
-    const result = await axios(' resep/api/recipes', {
+    const result = await axios(`${API_LINK}/api/recipes`, {
       headers: { 'Access-Control-Allow-Origin': '*' },
       method: 'GET',
       crossdomain: true,

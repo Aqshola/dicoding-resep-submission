@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { API_LINK } from '../../constant'
 
 class result extends HTMLElement {
   constructor() {
@@ -53,7 +54,7 @@ class result extends HTMLElement {
 
   async getSearchResult() {
     const query = this.getQuerySearch()
-    const result = await axios(`resep/api/search/?q=${query}`)
+    const result = await axios(`${API_LINK}/api/search/?q=${query}`)
     this.renderResult(result.data.results)
   }
 }

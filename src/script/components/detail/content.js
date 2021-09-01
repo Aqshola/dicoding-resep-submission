@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { API_LINK } from '../../constant'
 
 class detail extends HTMLElement {
   constructor() {
@@ -44,7 +45,7 @@ class detail extends HTMLElement {
   async getRecipeDetail() {
     const query = this.getQuerySearch()
     const { title, thumb, desc, ingredient, step } = await (
-      await axios(`resep/api/recipe/${query}`)
+      await axios(`${API_LINK}/api/recipe/${query}`)
     ).data.results
 
     this.updateTitleDescAndPhoto(title, desc, thumb)
