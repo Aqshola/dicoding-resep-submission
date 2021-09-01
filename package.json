@@ -30,15 +30,5 @@
     "style-loader": "^3.2.1",
     "webpack-dev-server": "^4.0.0",
     "webpack-obfuscator": "^3.4.1"
-  },
-  "proxy": {
-    "/resep": {
-      "target": "https://masak-apa-tomorisakura.vercel.app",
-      "secure": false,
-      "changeOrigin": true,
-      "pathRewrite": {
-        "^/resep": ""
-      }
-    }
   }
 }
