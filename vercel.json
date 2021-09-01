@@ -1,5 +1,5 @@
 {
   "redirects": [
-    { "source": "/resep/.*", "destination": "https://masak-apa-tomorisakura.vercel.app/" },
+    { "source": "/resep/*", "destination": "https://masak-apa-tomorisakura.vercel.app/" },
   ]
 }
