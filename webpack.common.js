@@ -54,4 +54,20 @@ module.exports = {
     maxEntrypointSize: 512000,
     maxAssetSize: 512000,
   },
+  devServer: {
+    headers: {
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+      'Access-Control-Allow-Headers':
+        'X-Requested-With, content-type, Authorization',
+      'Access-Control-Allow-Origin': '*',
+    },
+    proxy: {
+      '/resep': {
+        target: 'https://masak-apa-tomorisakura.vercel.app',
+        secure: false,
+        changeOrigin: true,
+        pathRewrite: { '^/resep': '' },
+      },
+    },
+  },
 }
