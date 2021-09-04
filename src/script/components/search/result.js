@@ -24,7 +24,7 @@ class result extends HTMLElement {
         <h3 id="search-result-count"></h3>
       </div>
       <div id="result-card-container">
-        
+        <h1>Memuat hasil pencarian...</h1>
       </div>
     </section>
     `

@@ -26,6 +26,7 @@ class detail extends HTMLElement {
       </section>
       <section id="content-detail">
         <p class="recipe-desc">
+            Memuat resep...
         </p>
         <section id="material">
           <h1>Bahan bahan</h1>
