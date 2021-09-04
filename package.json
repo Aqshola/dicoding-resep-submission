@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js && node netlify_redirect_config.js",
+    "build": "webpack --config webpack.prod.js",
     "tesprod": "webpack serve --config webpack.prod.js"
   },
   "author": "",
